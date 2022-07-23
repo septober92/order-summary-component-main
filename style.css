@@ -36,7 +36,6 @@ section {
   margin: auto;
   padding: 0 48px 48px 48px;
   width: 450px;
-  height: 700px;
   border-radius: 20px;
   background-color: #fff;
   background-image: url(images/illustration-hero.svg);
@@ -146,7 +145,6 @@ ul {
     margin: auto;
     padding: 0 24px 24px 24px;
     width: 21em;
-    height: 37em;
     border-radius: 20px;
     background-color: #fff;
     background-image: url(images/illustration-hero.svg);
