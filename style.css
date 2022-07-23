@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size: 16px;
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  color: var(--desaturated-blue);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: url(images/pattern-background-desktop.svg) no-repeat
+    var(--pale-blue);
+}
+
+.order--card {
+  margin: auto;
+  padding: 0 48px 48px 48px;
+  width: 450px;
+  height: 700px;
+  border-radius: 20px;
+  background-color: #fff;
+  background-image: url(images/illustration-hero.svg);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.order--card h1 {
+  font-size: 1.8rem;
+  color: var(--dark-blue);
+  margin-top: 260px;
+  margin-bottom: 20px;
+}
+
+.order--card figure {
+  letter-spacing: 0;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.plan ul {
+  padding: 23px;
+  border-radius: 15px;
+  background-color: var(--very-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+.plan li span {
+  display: block;
+}
+
+.plan ul li span {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.plan ul li a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.plan ul li a:hover,
+.plan ul li a:active {
+  text-decoration: none;
+  color: #746cea;
+}
+
+.plan ul li:nth-child(2) {
+  margin-right: 80px;
+}
+
+.btn {
+  display: block;
+  padding: 15px 100px 15px 100px;
+  border-radius: 15px;
+  background-color: var(--bright-blue);
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0px 20px 30px -5px hsla(245, 53%, 49%, 0.429);
+  margin-bottom: 36px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #746cea;
+}
+
+.cancel {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+.cancel:hover,
+.cancel:active {
+  color: var(--dark-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 800px) {
+  section {
+    background: url(images/pattern-background-mobile.svg) no-repeat
+      var(--pale-blue);
+    background-size: 800px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .order--card {
+    margin: auto;
+    padding: 0 24px 24px 24px;
+    width: 327px;
+    height: 590px;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image: url(images/illustration-hero.svg);
+    background-position: 0px 0px;
+    background-size: 327px;
+    background-repeat: no-repeat;
+  }
+
+  .order--card h1 {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    margin-top: 195px;
+    margin-bottom: 20px;
+  }
+
+  .order--card figure {
+    font-size: 0.94rem;
+    letter-spacing: 0.3px;
+    padding: 0 10px 0 10px;
+    margin-bottom: 30px;
+  }
+
+  .plan ul {
+    padding: 16px;
+    border-radius: 15px;
+    background-color: var(--very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: none;
+  }
+  .plan li span {
+    display: block;
+  }
+
+  .plan ul li span {
+    color: var(--dark-blue);
+    font-weight: 700;
+  }
+
+  .plan ul li a {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .plan ul li a:hover,
+  .plan ul li a:active {
+    text-decoration: none;
+    color: #746cea;
+  }
+
+  .plan ul li:nth-child(2) {
+    margin-right: 20px;
+  }
+
+  .btn {
+    display: block;
+    padding: 15px 42px 15px 42px;
+    border-radius: 15px;
+    background-color: var(--bright-blue);
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    box-shadow: 0px 20px 30px -5px hsla(245, 53%, 49%, 0.429);
+    margin-bottom: 28px;
+  }
+
+  .cancel {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    margin-bottom: 20px;
+  }
+}
