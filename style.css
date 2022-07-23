@@ -46,6 +46,7 @@ section {
 
 .order--card h1 {
   font-size: 1.8rem;
+  font-weight: 900;
   color: var(--dark-blue);
   margin-top: 260px;
   margin-bottom: 20px;
